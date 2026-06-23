@@ -1,0 +1,25 @@
+<Witos>
+
+<append xpath="/items">
+        <item name="Airplaneplaceable">
+          <property name="Extends" value="vehicleMinibikePlaceable"/>
+          <property name="CreativeMode" value="Player"/>
+          <property name="DescriptionKey" value="vehiclefavPlaceableDesc"/>
+          <property name="CustomIcon" value="Airplane"/>
+          <property name="Tags" value="vehicle,varmor,vengine,vfuel,vlight,vstorage"/>
+          <property name="Meshfile" value="#@modfolder:Resources/Airplane.unity3d?Airplane"/>
+          <property name="EconomicValue" value="50000"/>
+          <property name="TraderStageTemplate" value="vehicleTier5"/><!-- vehicleGyrocopterPlaceable -->
+          <property class="Action1">
+            <property name="Vehicle" value="Airplane"/>
+            <property name="VehicleSize" value="3, 3, 3"/>
+          </property>
+          <effect_group name="Airplaneplaceable" tiered="false">
+            <passive_effect name="ModSlots" operation="base_set" value="4"/>
+            <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+            <passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+          </effect_group>
+        </item>
+	
+     </append>
+</Witos>

@@ -1,0 +1,20 @@
+<Witos>
+	<append xpath="/Sounds">
+		
+	<SoundDataNode name="Airplane_flying"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/Airplane.unity3d?Airplanesound" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="1"/> <NoiseScale value="1"/> 
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/> 
+	</SoundDataNode>
+	<SoundDataNode name="Airplane_med_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Vehicle.prefab"/>
+			<AudioClip ClipName="#@modfolder:Resources/Airplane.unity3d?Airplanesound" Loop="true"/>
+			<LocalCrouchVolumeScale value="1.0"/> 
+			<CrouchNoiseScale value="1"/> <NoiseScale value="1"/> 
+			<MaxVoices value="10"/>
+			<MaxRepeatRate value="0.01"/> 
+	</SoundDataNode>
+			
+	</append>
+</Witos>

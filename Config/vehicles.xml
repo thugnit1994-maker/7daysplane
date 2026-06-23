@@ -1,0 +1,219 @@
+<witos>
+ <append xpath="/vehicles">
+        <vehicle name="Airplane">
+          <property name="cameraDistance" value="19, 32"/>
+          <property name="cameraTurnRate" value=".18, .30"/>
+          <property name="upAngleMax" value="15"/>
+          <property name="upForce" value="0"/>
+          <property name="steerRate" value="80"/>
+          <property name="steerCenteringRate" value="90"/>
+          <property name="tiltAngleMax" value="120"/>
+          <property name="tiltThreshold" value="45"/>
+          <property name="tiltDampening" value="20"/>
+          <property name="tiltDampenThreshold" value="0"/>
+          <property name="tiltUpForce" value="0"/>
+          <property name="airDrag_velScale_angVelScale" value=".988, .984"/>
+		  <property name="disableTurboSound" value="true"/>
+
+          <property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
+          <property name="waterLift_y_depth_force" value="1, .5, .1"/>
+          <property name="motorTorque_turbo" value="1500, 900, 1500, 900"/>
+          <property name="velocityMax_turbo" value="65, 65, 65, 65"/>
+          <property name="brakeTorque" value="200"/>
+          <property name="unstickForce" value="1"/>
+          <property name="hornSound" value="gyrocopter_horn"/>
+
+          <property name="yawLeftKey" value="Q"/>
+          <property name="yawRightKey" value="R"/>
+          <property name="yawLeftJoyButton" value="JoystickButton4"/>
+          <property name="yawRightJoyButton" value="JoystickButton5"/>
+
+          <!-- ========================= -->
+          <!-- AERODINÁMICA / MOTOR     -->
+          <!-- ========================= -->
+          <property name="engineThrust" value="15000"/>
+          <property name="wingArea" value="19"/>
+          <property name="airDensity" value="1.225"/>
+          <property name="stallSpeed" value="27"/>
+          <property name="liftScale" value="1.30"/>
+          <property name="baseDrag" value="0.004"/>
+          <property name="inducedDrag" value="0.008"/>
+          <property name="sideDrag" value="0.28"/>
+          <property name="verticalDrag" value="0.18"/>
+          <property name="maxAoADeg" value="24"/>
+          <property name="extraFallMultiplier" value="4.9"/>
+          <property name="fallSpeedThreshold" value="11"/>
+          <property name="maxLiftG" value="2.6"/>
+
+          <!-- ========================= -->
+          <!-- CONTROLES / INERCIA      -->
+          <!-- ========================= -->
+          <property name="invertPitch" value="true"/>
+          <property name="pitchTorque" value="4200"/>
+          <property name="rollTorque" value="5500"/>
+          <property name="yawTorque" value="2500"/>
+          <property name="turnCoordination" value="0.05"/>
+          <property name="angularDamping" value="0.995"/>
+          <property name="controlDeadZone" value="0.08"/>
+
+          <!-- ========================= -->
+          <!-- DESPEGUE / ATERRIZAJE    -->
+          <!-- ========================= -->
+          <property name="takeoffAssistEnabled" value="true"/>
+          <property name="takeoffAssistMax" value="0.10"/>
+          <property name="takeoffAssistSpeedMul" value="1.20"/>
+          <property name="thrustAsAcceleration" value="false"/>
+
+          <!-- ========================= -->
+          <!-- RUEDAS                   -->
+          <!-- ========================= -->
+          <property name="wheelDisableSpeedMul" value="1.10"/>
+          <property name="wheelHighSpeedFriction" value="0.25"/>
+          <property name="wheelHighSpeedSlip" value="1.6"/>
+
+          <!-- ========================= -->
+          <!-- SUPERFICIES DE CONTROL   -->
+          <!-- ========================= -->
+          <property name="aileronLeftPath" value="M/AileronLeft"/>
+          <property name="aileronRightPath" value="M/AileronRight"/>
+
+          <!-- WHEELS VISUAL ROTATION -->
+          <property name="wheelRearVisualPath" value="M/Avion/Fuselage/LGRear1/LGRear2/LGRear3/Wheel0/Wheel0"/>
+          <property name="wheelLeftVisualPath" value="M/Avion/Fuselage/LGL1/Wheel2/Wheel2"/>
+          <property name="wheelRightVisualPath" value="M/Avion/Fuselage/LGR1/Wheel3/Wheel3"/>
+          <property name="wheelSpinAxisLocal" value="1,0,0"/>
+          <property name="wheelSpinSpeed" value="120"/>
+
+          <property name="elevatorPath" value="M/Elevator"/>
+          <property name="rudderPath" value="M/Avion/Fuselage/Rudder"/>
+
+          <!-- ========================= -->
+          <!-- FLAPS                    -->
+          <!-- ========================= -->
+          <property name="flapLeftPath" value="M/Avion/Fuselage/LandingFlapL2"/>
+          <property name="flapRightPath" value="M/Avion/Fuselage/LandingFlapR2"/>
+          <property name="flapTakeoffAngle" value="30"/>
+          <property name="flapLandingAngle" value="-30"/>
+          <property name="flapSpeed" value="40"/>
+          <property name="flapAxisLocal" value="-1,0,0"/>
+          <property name="flapTakeoffMaxSpeed" value="30"/>
+          <property name="flapLandingMaxSpeed" value="25"/>
+          <property name="flapRetractMinSpeed" value="30"/>
+
+          <!-- ========================= -->
+          <!-- EJES DE SUPERFICIES      -->
+          <!-- ========================= -->
+          <property name="aileronAxisLocal" value="1,0,0"/>
+          <property name="elevatorAxisLocal" value="1,0,0"/>
+          <property name="rudderAxisLocal" value="0,-1,0"/>
+
+          <!-- ========================= -->
+          <!-- ACELERADOR               -->
+          <!-- ========================= -->
+          <property name="throttleUpRate" value="0.10"/>
+          <property name="throttleDownRate" value="0.05"/>
+          <property name="idleThrottle" value="0.04"/>
+
+          <!-- ========================= -->
+          <!-- TREN DE ATERRIZAJE AUTO  -->
+          <!-- ========================= -->
+          <property name="autoGearEnabled" value="true"/>
+          <property name="gearRetractAltitude" value="30"/>
+          <property name="gearDeployAltitude" value="20"/>
+          <property name="gearAnimStateName" value="Airplaneanim"/>
+          <property name="gearAnimSpeed" value="0.6"/>
+          <property name="gearAnimatorPath" value="M/Avion/Fuselage"/>
+          <property name="gearUseAltitudeAboveGround" value="true"/>
+
+          <property class="chassis">
+            <property name="class" value="Chassis"/>
+            <property name="paint" value="M"/>
+          </property>
+
+          <property class="engine">
+            <property name="class" value="Engine"/>
+            <property name="particleOn" value="Particles/p_on"/>
+            <property name="particleDamaged" value="Particles/p_damaged"/>
+            <property name="particleBroken" value="Particles/p_broken"/>
+            <property name="fuelKmPerL" value="0.15"/>
+            <property name="foodDrain" value=".002,.00811"/>
+            <property name="gear1" value="
+									500,2500, -1400,800,0, 1500,9999,9999,
+									,
+									,
+									0, .5,  .45, .1,  -9, .1, .1, Airplane_flying,
+									-.1, .1,  .65, .7,  0, 9, .1, Airplane_med_lp
+									"/>
+            <property name="sound_start" value="Vehicles/Gyrocopter/gyrocopter_start"/>
+            <property name="sound_shut_off" value="Vehicles/Gyrocopter/gyrocopter_shutoff"/>
+            <property name="sound_no_fuel_shut_off" value="Vehicles/Gyrocopter/gyrocopter_sputter"/>
+          </property>
+
+          <property class="fuelTank">
+            <property name="class" value="FuelTank"/>
+            <property name="capacity" value="250"/>
+          </property>
+
+          <property class="handlebars">
+            <property name="class" value="Steering"/>
+            <property name="steerMaxAngle" value="0"/>
+            <property name="steerAngle" value="0, 0, -15"/>
+            <property name="transform" value="M/Avion/Fuselage/Joystick"/>
+            <property name="IKHandLPosition" value="-0.0781,0.638,-0.103"/>
+            <property name="IKHandLRotation" value="-85.6472, -59.8085, 175.7939"/>
+            <property name="IKHandRPosition" value="0.0359, 0.672,-0.086"/>
+            <property name="IKHandRRotation" value="83.2585, 90.3006, -170.2602"/>
+          </property>
+
+          <property class="seat0">
+            <property name="class" value="Seat"/>
+            <property name="pose" value="50"/>
+            <property name="position" value="0,1.2,0.110"/>
+            <property name="rotation" value="0, 0, 0"/>
+            <property name="exit" value="-1.3,0,.9 ~ 1.3,0,1.5 ~ -.5,0,-2.4 ~ -.5,0,2.4 ~ -.5,2,0"/>
+          </property>
+
+          <property class="motor0">
+            <property name="engine" value="engine"/>
+            <property name="engineOffPer" value=".05"/>
+            <property name="turbo" value="1.35"/>
+            <property name="rpmAccel_min_max" value="0.001, .1"/>
+            <property name="rpmMax" value="22"/>
+            <property name="rpmDrag" value=".975"/>
+            <property name="trigger" value="throttle"/>
+            <property name="type" value="spin"/>
+            <property name="transform" value="M/PropBack"/>
+            <property name="axis" value="2"/>
+          </property>
+
+          <property class="wheel0">
+            <property name="tireTransform" value="M/Avion/Fuselage/LGRear1/LGRear2/LGRear3/GameObject/Wheel0/Wheel0"/>
+            <property name="torqueScale_motor_brake" value="1, 1"/>
+          </property>
+
+          <property class="wheel2">
+            <property name="tireTransform" value="M/Avion/Fuselage/LGL1/Wheel2/Wheel2"/>
+            <property name="torqueScale_motor_brake" value="1, 1"/>
+          </property>
+
+          <property class="wheel3">
+            <property name="tireTransform" value="M/Avion/Fuselage/LGR1/Wheel3/Wheel3"/>
+            <property name="torqueScale_motor_brake" value="0, 1"/>
+          </property>
+
+          <property class="headlight">
+            <property name="class" value="Headlight"/>
+            <property name="bright" value=".75"/>
+            <property name="transform" value="M/HeadLights/Lights"/>
+            <property name="matT" value="M/HeadLights"/>
+            <property name="matEmissive" value="808080"/>
+          </property>
+
+          <property class="storage">
+            <property name="class" value="Storage"/>
+            <property name="mod" value="storage"/>
+            <property name="modT" value=""/>
+          </property>
+        </vehicle>
+      </append>
+</witos>

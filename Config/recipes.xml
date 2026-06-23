@@ -1,0 +1,11 @@
+<Witos>
+  <append xpath="/recipes">
+	<recipe name="Airplaneplaceable" count="1" craft_time="600" craft_area="workbench" tags="workbenchCrafting">
+				<ingredient name="vehicleGyrocopterPlaceable" count="1"/>
+				<ingredient name="vehicleGyroCopterAccessories" count="1"/>
+				<ingredient name="vehicleGyroCopterChassis" count="1"/>
+				<ingredient name="resourceForgedSteel" count="50"/>
+				<ingredient name="resourceLegendaryParts" count="5"/>
+	</recipe>
+   </append>
+  </Witos>
